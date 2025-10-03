@@ -17,37 +17,46 @@
     --color-gray: #616161;
 }
 
+.hero {
+    position: relative;
+}
+
 .popup {
     display: none;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translate(0, -50%);
     border-radius: 1rem;
     backdrop-filter: brightness(0.3);
-    width: 40rem;
-    height: 20rem;
+    padding: 2rem;
 }
 
 .popup p {
     color: var(--color-white);
     text-align: center;
+    padding-bottom: 2rem;
 }
 
 .popup p:first-child {
     font-size: 1.8rem;
-    padding: 1rem 0;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
 }
 
 .popup p:nth-child(3) {
     font-size: 1.3rem;
-    margin: 1rem 0;
+    margin: 2rem 2rem;
 }
 
 .popup hr {
     border: none;
     height: 0.2rem;
     background-color: var(--color-gray);
-    width: 90%;
+    width: 100%;
 }
 
-.go-download {
+.hero .go-download {
     background-color: var(--color-green);
     color: var(--color-white);
     width: 100vw;
@@ -55,7 +64,7 @@
     padding: 1rem 0;
 }
 
-.go-download p {
+.hero .go-download p {
     font-size: 1.4rem;
 }
 
@@ -372,4 +381,89 @@ footer p:first-child {
 
 footer p:last-child {
     font-size: 1.5rem;
+}
+
+@media screen and (min-width: 800px) {
+
+    .hero .go-download {
+        position: absolute;
+        top: calc(50% + 3.5rem);
+        left: 3rem;
+        width: fit-content;
+        padding: 0.5rem 8rem;
+        z-index: 1;
+        border-radius: 0.4rem;
+        font-size: 1.6rem;
+    }
+
+    .hero .take-tour {
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: fit-content;
+        padding: 1rem 2rem;
+    }
+
+    .hero .take-tour p {
+        padding: 0;
+    }
+
+    .popup {
+        display: block;
+    }
+
+    .the-app {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .the-app .leftside {
+        width: 66%;
+    }
+
+    .the-app .rightside {
+        width: 33%;
+    }
+
+    .the-app .leftside p:nth-child(5) {
+        text-align: left;
+        padding: 1rem 2rem;
+        width: fit-content;
+        background-color: var(--color-light-gray);
+    }
+
+    .clarity .claritycontainer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .clarity .claritycontainer .leftside {
+        display: block;
+        width: 33%;
+    }
+
+    .clarity .claritycontainer .rightside {
+        width: 66%;
+    }
+
+    .features .cardcontainer div:nth-child(9),
+    .features .cardcontainer div:nth-child(10),
+    .features .cardcontainer div:nth-child(11),
+    .features .cardcontainer div:nth-child(12) {
+        display: block;
+    }
+
+    .pricing .pricingcontainer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pricing .pricingcontainer .leftside,
+    .pricing .pricingcontainer .rightside {
+        width: 49%;
+    }
 }
