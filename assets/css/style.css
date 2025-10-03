@@ -12,6 +12,13 @@
 :root {
     --color-green: #4cb050;
     --color-white: #ffffff;
+    --color-black: #000000;
+    --color-light-gray: #f1f1f1;
+}
+
+.popup {
+    width: 100rem;
+    height: 30rem;
 }
 
 .go-download {
@@ -22,3 +29,27 @@
     padding: 1rem 0;
 }
 
+.take-tour {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    width: 100vw;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.the-app,
+.clarity {
+    display: flex;
+    flex-direction: column;
+}
+
+.the-app .leftside
+.the-app .rightside {
+    width: 100vw;
+}
+
+footer {
+    background-color: var(--color-light-gray);
+    padding: 4rem 0;
+    text-align: center;
+}
