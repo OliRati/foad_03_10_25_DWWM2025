@@ -19,17 +19,23 @@
 
 .hero {
     position: relative;
+    width: 100vw;
+}
+
+.hero img {
+    width: 100%;
 }
 
 .popup {
     display: none;
     position: absolute;
+    background-color: var(--color-black);
     left: 1rem;
     top: 50%;
     transform: translate(0, -50%);
     border-radius: 1rem;
-    backdrop-filter: brightness(0.3);
     padding: 2rem;
+    filter: opacity(0.6);
 }
 
 .popup p {
@@ -196,6 +202,7 @@
 /* Features section */
 
 .features {
+    width: 100vw;
     background-color: var(--color-gray);
     color: var(--color-white);
     text-align: center;
@@ -372,6 +379,7 @@ footer {
     background-color: var(--color-light-gray);
     padding: 4rem 0;
     text-align: center;
+    width: 100vw;
 }
 
 footer p:first-child {
@@ -394,6 +402,7 @@ footer p:last-child {
         z-index: 1;
         border-radius: 0.4rem;
         font-size: 1.6rem;
+        filter: opacity(0.6);
     }
 
     .hero .take-tour {
@@ -415,16 +424,16 @@ footer p:last-child {
 
     .the-app {
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
 
     .the-app .leftside {
-        width: 66%;
+        width: 60%;
     }
 
     .the-app .rightside {
-        width: 33%;
+        width: 30%;
     }
 
     .the-app .leftside p:nth-child(5) {
@@ -437,16 +446,16 @@ footer p:last-child {
     .clarity .claritycontainer {
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .clarity .claritycontainer .leftside {
         display: block;
-        width: 33%;
+        width: 30%;
     }
 
     .clarity .claritycontainer .rightside {
-        width: 66%;
+        width: 60%;
     }
 
     .features .cardcontainer div:nth-child(9),
