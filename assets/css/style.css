@@ -18,8 +18,33 @@
 }
 
 .popup {
-    width: 100rem;
-    height: 30rem;
+    display: none;
+    border-radius: 1rem;
+    backdrop-filter: brightness(0.3);
+    width: 40rem;
+    height: 20rem;
+}
+
+.popup p {
+    color: var(--color-white);
+    text-align: center;
+}
+
+.popup p:first-child {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+
+.popup p:nth-child(3) {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+
+.popup hr {
+    border: none;
+    height: 0.2rem;
+    background-color: var(--color-gray);
+    width: 90%;
 }
 
 .go-download {
@@ -30,12 +55,21 @@
     padding: 1rem 0;
 }
 
+.go-download p {
+    font-size: 1.4rem;
+}
+
 .take-tour {
     background-color: var(--color-black);
     color: var(--color-white);
     width: 100vw;
+}
+
+.take-tour p {
+    font-size: 1.4rem;
     text-align: center;
-    padding: 1rem 0;
+    padding-top: 0.2rem;
+    padding-bottom: 1rem;
 }
 
 /* The App section */
@@ -54,12 +88,15 @@
 
 
 .the-app .leftside h1 {
+    padding-top: 7rem;
     font-size: 5.5rem;
 }
 
 .the-app .leftside p:nth-child(2) {
-    font-size: 5.5rem;
+    font-size: 4.5rem;
+    font-weight: 600;
     color: #4cb050;
+    margin-bottom: 1rem;
 }
 
 .the-app .leftside p:nth-child(3) {
@@ -95,6 +132,7 @@
 
 .the-app .rightside img {
     margin: 0 auto;
+    margin-bottom: 5rem;
 }
 
 /* Clarity section */
@@ -109,6 +147,10 @@
     flex-direction: column;
     width: 95%;
     margin: 0 auto;
+}
+
+.clarity .claritycontainer .leftside {
+    display: none;
 }
 
 .clarity .claritycontainer .leftside,
@@ -127,7 +169,7 @@
 }
 
 .clarity .claritycontainer .rightside p:nth-child(2) {
-    font-size: 4rem;
+    font-size: 3.8rem;
     font-weight: 900;
     color: #f34336;
     margin-bottom: 2.5rem;
@@ -136,6 +178,7 @@
 .clarity .claritycontainer .rightside p:nth-child(3) {
     font-size: 1.5rem;
     padding-bottom: 8rem;
+
     span {
         font-size: 2.2rem;
     }
@@ -209,6 +252,13 @@
 
 .features .cardcontainer div:nth-child(8) i {
     color: #00bdd3;
+}
+
+.features .cardcontainer div:nth-child(9),
+.features .cardcontainer div:nth-child(10),
+.features .cardcontainer div:nth-child(11),
+.features .cardcontainer div:nth-child(12) {
+    display: none;
 }
 
 .features .cardcontainer div:nth-child(9) i {
