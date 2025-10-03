@@ -86,13 +86,13 @@
     font-size: 1.4rem;
 }
 
-.take-tour {
+.hero .take-tour {
     background-color: var(--color-black);
     color: var(--color-white);
     width: 100vw;
 }
 
-.take-tour p {
+.hero .take-tour p {
     font-size: 1.4rem;
     text-align: center;
     padding-top: 0.2rem;
@@ -154,7 +154,7 @@
 }
 
 .the-app .leftside p:nth-child(4) i:nth-child(3) {
-    color:var(--color-light-blue);
+    color: var(--color-light-blue);
 }
 
 .the-app .rightside img {
@@ -487,5 +487,95 @@ footer p:last-child {
     .pricing .pricingcontainer .leftside,
     .pricing .pricingcontainer .rightside {
         width: 49%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero .go-download {
+        padding: 0.5rem 0;
+    }
+
+    .hero .go-download p {
+        font-size: 1.2rem;
+    }
+
+    .hero .take-tour p {
+        font-size: 1.2rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .the-app .leftside h1,
+    .clarity .claritycontainer .rightside h2,
+    .features h2,
+    .pricing h2 {
+        font-size: 2rem;
+    }
+
+    .the-app .leftside p:nth-child(2),
+    .clarity .claritycontainer .rightside p:nth-child(2) {
+        font-size: 2.8rem;
+    }
+
+    .the-app .leftside p:nth-child(3),
+    .the-app .leftside p:nth-child(4),
+    .the-app .leftside p:nth-child(5) {
+        font-size: 1.3rem;
+    }
+
+    .clarity .claritycontainer .rightside p:nth-child(3) {
+        font-size: 1.3rem;
+
+        span {
+            font-size: 1.8rem;
+        }
+    }
+
+    .features>p,
+    .pricing>p {
+        font-size: 1.3rem;
+    }
+
+    .features .cardcontainer {
+        padding: 3rem 2rem;
+        row-gap: 3rem;
+    }
+
+    .features .cardcontainer div i {
+        font-size: 3.5rem;
+    }
+
+    .features .cardcontainer div p {
+        font-size: 1.1rem;
+    }
+
+    .pricing .pricingcontainer .leftside p,
+    .pricing .pricingcontainer .rightside p {
+        padding: 1.3rem;
+        font-size: 1.1rem;
+    }
+
+    .pricing .pricingcontainer .leftside p:nth-child(1),
+    .pricing .pricingcontainer .rightside p:nth-child(1) {
+        font-size: 1.5rem;
+    }
+
+    .pricing .pricingcontainer .leftside p:nth-child(6),
+    .pricing .pricingcontainer .rightside p:nth-child(6) {
+        font-size: 2rem;
+    }
+
+    .pricing .pricingcontainer .leftside p:last-child,
+    .pricing .pricingcontainer .rightside p:last-child {
+        button {
+            font-size: 1.1rem;
+        }
+    }
+
+    footer p:first-child {
+        font-size: 1.2rem;
+    }
+
+    footer p:last-child {
+        font-size: 1rem;
     }
 }
