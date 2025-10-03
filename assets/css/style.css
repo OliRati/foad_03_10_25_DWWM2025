@@ -44,8 +44,7 @@
     flex-direction: column;
 }
 
-.the-app .leftside
-.the-app .rightside {
+.the-app .leftside .the-app .rightside {
     width: 100vw;
 }
 
@@ -137,6 +136,83 @@
     font-size: 1.5rem;
     color: var(--color-white);
 }
+
+/* Pricing section */
+
+.pricing {
+    text-align: center;
+}
+
+.pricing h2 {
+    padding-top: 5rem;
+    padding-bottom: 1.4rem;
+    font-size: 5.5rem;
+}
+
+.pricing>p {
+    font-size: 1.5rem;
+    padding-bottom: 6rem;
+}
+
+.pricing .pricingcontainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+}
+
+.pricing .pricingcontainer .leftside,
+.pricing .pricingcontainer .rightside {
+    width: 100%;
+    box-shadow: 0 0 5px var(--color-gray);
+}
+
+.pricing .pricingcontainer .leftside p,
+.pricing .pricingcontainer .rightside p {
+    border-bottom: 2px solid var(--color-light-gray);
+    padding: 2rem 0;
+    font-size: 1.4rem;
+}
+
+.pricing .pricingcontainer .leftside p span,
+.pricing .pricingcontainer .rightside p span {
+    font-weight: 600;
+}
+
+.pricing .pricingcontainer .leftside p:nth-child(1) {
+    background-color: #616161;
+}
+
+.pricing .pricingcontainer .rightside p:nth-child(1) {
+    background-color: #f44236;
+}
+
+.pricing .pricingcontainer .leftside p:nth-child(1),
+.pricing .pricingcontainer .rightside p:nth-child(1) {
+    color: var(--color-white);
+    font-size: 2rem;
+}
+
+.pricing .pricingcontainer .leftside p:nth-child(6),
+.pricing .pricingcontainer .rightside p:nth-child(6) {
+    font-size: 2.5rem;
+}
+
+.pricing .pricingcontainer .leftside p:last-child,
+.pricing .pricingcontainer .rightside p:last-child {
+    background-color: #f1f1f1;
+
+    button {
+        background-color: var(--color-black);
+        color: var(--color-white);
+        font-size: 1.4rem;
+        padding: 1rem 1.8rem;
+    }
+}
+
+/* Footer section */
 
 footer {
     background-color: var(--color-light-gray);
