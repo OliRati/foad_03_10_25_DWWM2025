@@ -38,15 +38,71 @@
     padding: 1rem 0;
 }
 
+/* The App section */
+
 .the-app,
 .clarity {
     display: flex;
     flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
 }
 
-.the-app .leftside .the-app .rightside {
-    width: 100vw;
+.the-app .leftside,
+.the-app .rightside {
+    width: 100%;
 }
+
+
+.the-app .leftside h1 {
+    font-size: 5.5rem;
+}
+
+.the-app .leftside p:nth-child(2) {
+    font-size: 5.5rem;
+    color: #4cb050;
+}
+
+.the-app .leftside p:nth-child(3) {
+    margin-bottom: 1.5rem;
+
+    span {
+        font-size: 2.2rem;
+    }
+}
+
+.the-app .leftside p:nth-child(3),
+.the-app .leftside p:nth-child(4),
+.the-app .leftside p:nth-child(5) {
+    font-size: 1.5rem;
+}
+
+.the-app .leftside p:nth-child(5) {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.the-app .leftside p:nth-child(4) i:nth-child(1) {
+    color: #4cb050;
+}
+
+.the-app .leftside p:nth-child(4) i:nth-child(2) {
+    color: var(--color-black);
+}
+
+.the-app .leftside p:nth-child(4) i:nth-child(3) {
+    color: #2196f3;
+}
+
+.the-app .rightside img {
+    margin: 0 auto;
+}
+
+/* Clarity section */
+
+
+
+/* Features section */
 
 .features {
     background-color: var(--color-gray);
@@ -218,4 +274,13 @@ footer {
     background-color: var(--color-light-gray);
     padding: 4rem 0;
     text-align: center;
+}
+
+footer p:first-child {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer p:last-child {
+    font-size: 1.5rem;
 }
