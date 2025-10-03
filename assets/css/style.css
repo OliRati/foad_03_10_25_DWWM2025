@@ -40,8 +40,7 @@
 
 /* The App section */
 
-.the-app,
-.clarity {
+.the-app {
     display: flex;
     flex-direction: column;
     width: 95%;
@@ -100,7 +99,47 @@
 
 /* Clarity section */
 
+.clarity {
+    width: 100vw;
+    background-color: #f1f1f1;
+}
 
+.clarity .claritycontainer {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.clarity .claritycontainer .leftside,
+.clarity .claritycontainer .rightside {
+    width: 100%;
+}
+
+.clarity .claritycontainer .leftside img {
+    margin: 0 auto;
+}
+
+.clarity .claritycontainer .rightside h2 {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    font-size: 6rem;
+}
+
+.clarity .claritycontainer .rightside p:nth-child(2) {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #f34336;
+    margin-bottom: 2.5rem;
+}
+
+.clarity .claritycontainer .rightside p:nth-child(3) {
+    font-size: 1.5rem;
+    padding-bottom: 8rem;
+    span {
+        font-size: 2.2rem;
+    }
+}
 
 /* Features section */
 
