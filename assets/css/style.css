@@ -10,11 +10,23 @@
 }
 
 :root {
-    --color-green: #4cb050;
     --color-white: #ffffff;
-    --color-black: #000000;
+    --color-semi-white: #fefefe;
     --color-light-gray: #f1f1f1;
+    --color-middle-gray: #757575;
     --color-gray: #616161;
+    --color-black: #000000;
+
+    --color-green: #4cb050;
+    --color-light-blue: #2196f3;
+    --color-light-blue-2: #00bdd3;
+    --color-light-red: #f34336;
+    --color-light-red-2: #f44236;
+    --color-light-orange: #ff9801;
+    --color-light-yellow: #d2be0f;
+    --color-yellow: #fec106;
+    --color-semi-yellow: #fdf6e6;
+    --color-pink: #e91d62;
 }
 
 .hero {
@@ -110,7 +122,7 @@
 .the-app .leftside p:nth-child(2) {
     font-size: 4.5rem;
     font-weight: 600;
-    color: #4cb050;
+    color: var(--color-green);
     margin-bottom: 1rem;
 }
 
@@ -134,7 +146,7 @@
 }
 
 .the-app .leftside p:nth-child(4) i:nth-child(1) {
-    color: #4cb050;
+    color: var(--color-green);
 }
 
 .the-app .leftside p:nth-child(4) i:nth-child(2) {
@@ -142,7 +154,7 @@
 }
 
 .the-app .leftside p:nth-child(4) i:nth-child(3) {
-    color: #2196f3;
+    color:var(--color-light-blue);
 }
 
 .the-app .rightside img {
@@ -154,7 +166,7 @@
 
 .clarity {
     width: 100vw;
-    background-color: #f1f1f1;
+    background-color: var(--color-light-gray);
 }
 
 .clarity .claritycontainer {
@@ -186,7 +198,7 @@
 .clarity .claritycontainer .rightside p:nth-child(2) {
     font-size: 3.8rem;
     font-weight: 900;
-    color: #f34336;
+    color: var(--color-light-red);
     margin-bottom: 2.5rem;
 }
 
@@ -239,35 +251,35 @@
 }
 
 .features .cardcontainer div:nth-child(1) i {
-    color: #ff9801;
+    color: var(--color-light-orange);
 }
 
 .features .cardcontainer div:nth-child(2) i {
-    color: #f44236;
+    color: var(--color-light-red-2);
 }
 
 .features .cardcontainer div:nth-child(3) i {
-    color: #d2be0f;
+    color: var(--color-light-yellow);
 }
 
 .features .cardcontainer div:nth-child(4) i {
-    color: #4cb050;
+    color: var(--color-green);
 }
 
 .features .cardcontainer div:nth-child(5) i {
-    color: #fefefe;
+    color: var(--color-semi-white);
 }
 
 .features .cardcontainer div:nth-child(6) i {
-    color: #2196f3;
+    color: var(--color-light-blue);
 }
 
 .features .cardcontainer div:nth-child(7) i {
-    color: #fec106;
+    color: var(--color-yellow);
 }
 
 .features .cardcontainer div:nth-child(8) i {
-    color: #00bdd3;
+    color: var(--color-light-blue-2);
 }
 
 .features .cardcontainer div:nth-child(9),
@@ -278,19 +290,19 @@
 }
 
 .features .cardcontainer div:nth-child(9) i {
-    color: #fdf6e6;
+    color: var(--color-semi-yellow);
 }
 
 .features .cardcontainer div:nth-child(10) i {
-    color: #ff9801;
+    color: var(--color-light-orange);
 }
 
 .features .cardcontainer div:nth-child(11) i {
-    color: #757575;
+    color: var(--color-middle-gray);
 }
 
 .features .cardcontainer div:nth-child(12) i {
-    color: #e91d62;
+    color: var(--color-pink);
 }
 
 .features .cardcontainer div p {
@@ -343,11 +355,11 @@
 }
 
 .pricing .pricingcontainer .leftside p:nth-child(1) {
-    background-color: #616161;
+    background-color: var(--color-gray);
 }
 
 .pricing .pricingcontainer .rightside p:nth-child(1) {
-    background-color: #f44236;
+    background-color: var(--color-light-red-2);
 }
 
 .pricing .pricingcontainer .leftside p:nth-child(1),
@@ -363,7 +375,7 @@
 
 .pricing .pricingcontainer .leftside p:last-child,
 .pricing .pricingcontainer .rightside p:last-child {
-    background-color: #f1f1f1;
+    background-color: var(--color-light-gray);
 
     button {
         background-color: var(--color-black);
