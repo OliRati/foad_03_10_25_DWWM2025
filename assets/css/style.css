@@ -1,0 +1,24 @@
+@import url("./reset.css");
+
+@font-face {
+    font-family: "poppins";
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+
+* {
+    font-family: "poppins";
+}
+
+:root {
+    --color-green: #4cb050;
+    --color-white: #ffffff;
+}
+
+.go-download {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    width: 100vw;
+    text-align: center;
+    padding: 1rem 0;
+}
+
