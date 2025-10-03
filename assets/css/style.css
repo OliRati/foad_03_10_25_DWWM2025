@@ -282,13 +282,6 @@
     color: var(--color-light-blue-2);
 }
 
-.features .cardcontainer div:nth-child(9),
-.features .cardcontainer div:nth-child(10),
-.features .cardcontainer div:nth-child(11),
-.features .cardcontainer div:nth-child(12) {
-    display: none;
-}
-
 .features .cardcontainer div:nth-child(9) i {
     color: var(--color-semi-yellow);
 }
@@ -482,7 +475,7 @@ footer p:last-child {
     .features .cardcontainer div:nth-child(10),
     .features .cardcontainer div:nth-child(11),
     .features .cardcontainer div:nth-child(12) {
-        display: block;
+        display: none;
     }
 
     .pricing .pricingcontainer {
