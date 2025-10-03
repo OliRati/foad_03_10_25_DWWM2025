@@ -435,6 +435,7 @@ footer p:last-child {
     }
 
     .the-app {
+        position: relative;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -448,9 +449,16 @@ footer p:last-child {
         width: 30%;
     }
 
+    .the-app .leftside p:nth-child(4) {
+        position: absolute;
+        bottom: 4rem;
+        left: 0;
+    }
+
     .the-app .leftside p:nth-child(5) {
         text-align: left;
         padding: 1rem 2rem;
+        margin-bottom: 8rem;
         width: fit-content;
         background-color: var(--color-light-gray);
     }
